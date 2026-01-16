@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog CEO Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐶 Dog Generator</h1>
+            <p>Descoperă rase de câini aleatoriu folosind Dog CEO API.</p>
+        </header>
+
+        <div class="image-container">
+            <img id="dog-image" src="https://images.dog.ceo/breeds/retriever-golden/n02099601_3004.jpg" alt="A dog placeholder">
+        </div>
+
+        <div class="info-panel">
+            <table id="stats-table">
+                <thead>
+                    <tr>
+                        <th>Cheie</th>
+                        <th>Valoare</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Status API</td>
+                        <td id="status-text">Așteptare...</td>
+                    </tr>
+                    <tr>
+                        <td>Rasă detectată</td>
+                        <td id="breed-text">-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="controls">
+            <button id="fetch-btn">Generează Câine Nou</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
